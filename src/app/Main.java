@@ -7,15 +7,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Scanner;
 
-/**
- * First lab exercise – array-based object creation and linking.
- * Demonstrates:
- *  - user input for 5 objects per class
- *  - arrays only (no collections)
- *  - linking between entities
- *  - for/while/do-while loops
- *  - min/max examples
- */
+
 public class Main {
 
     private static final int N = 5;
@@ -80,7 +72,7 @@ public class Main {
             Date birth = df.parse(sc.nextLine());
 
             // Pick random route and stops
-            Route route = routes[i % N];
+            Route route = routes[i];
             Stop entry = route.getStops()[0];
             Stop exit = route.getStops()[1];
             Booking booking = new Booking(route, 10.0 + i, 5.0 + i);
